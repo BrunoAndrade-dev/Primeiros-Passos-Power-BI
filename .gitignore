@@ -1,0 +1,69 @@
+# Ambiente Virtual
+venv/
+env/
+ENV/
+.venv
+
+# Arquivos de Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribuição e Build
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE e Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+
+# Banco de Dados
+*.db
+*.sqlite
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Arquivos de Sistema
+Thumbs.db
+.DS_Store
+
+# Arquivos Temporários
+*.tmp
+*.temp
+.cache/
+*.bak
+
+# Dados Brutos (opcional - descomente se não quiser compartilhar)
+# Data/raw/
+
+# Output de Análises (opcional)
+# reports/figs/
