@@ -27,17 +27,7 @@ Ambiente Virtual (venv) configurado para isolamento de dependencias.
 
 ### Como Executar o Projeto
 
-1. Configuracao do Ambiente:
-Instale as dependencias necessarias executando o comando pip install pandas no seu terminal. Certifique-se de estar com o ambiente virtual ativado.
-
-2. Processamento e Carga (ETL):
-Execute o script de carga para converter os dados do CSV em tabelas SQL. Este processo realiza a limpeza automatica de valores ausentes, preenchendo colunas como Year e Publisher com a marcacao Desconhecido.
-
-3. Consultas SQL:
-Os dados podem ser consultados diretamente no arquivo vendas_games.db. O projeto ja inclui consultas estruturadas para calcular a soma de vendas por plataforma e rankings de mercado.
-
-4. Painel de BI:
-Abra o arquivo no Power BI Desktop. Para que os graficos funcionem corretamente, atualize o caminho do arquivo .db no script de origem de dados para o diretorio onde o projeto foi clonado em sua maquina.
+.Em breve passo a passo e adição do arquivo .pbx para abrir no BI
 
 ### Tecnologias Utilizadas
 
