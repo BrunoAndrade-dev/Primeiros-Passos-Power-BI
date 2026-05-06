@@ -1,23 +1,46 @@
-Analise de Dados de Vendas de Videogames
-Este projeto realiza o processo de ETL (Extração, Transformação e Carga) de um conjunto de dados sobre a industria de games, integrando Python para processamento, SQLite para armazenamento estruturado e Power BI para visualização de indicadores.
+# Analise de Dados de Vendas de Videogames
 
-Objetivo
-O programa processa dados historicos de vendas para responder perguntas sobre o desempenho de plataformas, generos de jogos e volumes de vendas globais, facilitando a tomada de decisão baseada em dados.
+Este projeto consiste em uma esteira de dados completa para o processamento e visualizacao de informacoes sobre o mercado de videogames. O fluxo abrange desde a limpeza de dados brutos com Python ate a criacao de um painel interativo no Power BI, utilizando SQL como camada intermediaria de armazenamento.
 
-Estrutura do Projeto
-As pastas e arquivos estao organizados da seguinte forma:
+### Objetivo
 
-Data: Arquivos CSV originais.
-Notebooks: Documentação da exploração inicial e testes de consultas SQL.
-src: Modulos Python para limpeza de dados e gerenciamento do banco de dados.
-vendas_games.db: Banco de dados gerado apos o processamento.
-projeto_vendas.pbix: Dashboard para visualização dos resultados.
+O sistema foi desenvolvido para responder perguntas de negocio fundamentais, como a identificacao das plataformas com maior volume de vendas, os generos de jogos dominantes e a evolucao temporal do mercado global de games.
 
-Requisitos
-Para executar este projeto, voce precisara de:
+### Estrutura do Projeto
 
-Python 3.x
-Bibliotecas Pandas e Sqlite3
-Power BI Desktop (para visualizar o dashboard)
+A organizacao do repositorio reflete as etapas do processo de BI:
 
-Em breve o passo a passo e adição do arquivo .pbx para visualizar o dashboard...
+Data: Contem o arquivo vgsales.csv original com dados de vendas globais.
+Notebooks: Documentacao de testes, exploracao inicial de dados e validacao de consultas SQL.
+src: Scripts Python responsaveis pela limpeza de dados (data_cleaning.py) e gerenciamento do banco de dados (database_manager.py).
+vendas_games.db: Arquivo de banco de dados SQLite gerado pelo processamento do Python.
+Relatorio: Arquivo de extensao .pbix contendo o dashboard interativo.
+
+### Requisitos do Sistema
+
+Para reproduzir este ambiente, sao necessarias as seguintes ferramentas:
+
+Python 3.12 ou superior.
+Bibliotecas Pandas e Sqlite3.
+Power BI Desktop.
+Ambiente Virtual (venv) configurado para isolamento de dependencias.
+
+### Como Executar o Projeto
+
+1. Configuracao do Ambiente:
+Instale as dependencias necessarias executando o comando pip install pandas no seu terminal. Certifique-se de estar com o ambiente virtual ativado.
+
+2. Processamento e Carga (ETL):
+Execute o script de carga para converter os dados do CSV em tabelas SQL. Este processo realiza a limpeza automatica de valores ausentes, preenchendo colunas como Year e Publisher com a marcacao Desconhecido.
+
+3. Consultas SQL:
+Os dados podem ser consultados diretamente no arquivo vendas_games.db. O projeto ja inclui consultas estruturadas para calcular a soma de vendas por plataforma e rankings de mercado.
+
+4. Painel de BI:
+Abra o arquivo no Power BI Desktop. Para que os graficos funcionem corretamente, atualize o caminho do arquivo .db no script de origem de dados para o diretorio onde o projeto foi clonado em sua maquina.
+
+### Tecnologias Utilizadas
+
+Python: Manipulacao, limpeza e automacao do fluxo de dados.
+SQL (SQLite): Armazenamento estruturado e execucao de queries de negocio.
+Power BI: Visualizacao de dados e criacao de dashboards interativos.
